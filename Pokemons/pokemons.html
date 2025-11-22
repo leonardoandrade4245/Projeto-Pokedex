@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="pokemon-screen">
+
+    <div id="cabecalho" class="cabecalho">
+        <h1 id="tit_pokedex" class="tit_pokedex">Pokedex</h1>
+    </div>
+
+    <!-- PAINEL DO POKEMON (AGORA EM CIMA) -->
+    <div id="pokemon-info" class="pokemon-info">
+        <p id="texto-inicial" class="texto-inicial">
+            Escolha um Pokémon...
+        </p>
+
+        <button id="voltar-btn" style="display:none;" onclick="voltarScroll()">
+            Voltar
+        </button>
+    </div>
+
+    <!-- CARDS EM 2 COLUNAS EMBAIXO -->
+    <div id="lista" class="lista"></div>
+
+    <script src="../Script/script.js"></script>
+
+    <footer>
+            <text id="txt_poke" class="txt_poke">Autor: Leonardo Andrade Almeida</text>
+            <text id="txt_poke" class="txt_poke">Pokedex</text>
+            <text id="txt_poke" class="txt_poke">2025</text>
+    </footer>
+</body>
+
+</html>

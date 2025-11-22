@@ -1,0 +1,211 @@
+/* ===========================
+   CONFIGURAÇÃO GLOBAL
+   =========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+
+
+/* ===========================
+       TELA INICIAL – POKÉBOLA
+   =========================== */
+
+.pokeball-container {
+    width: 550px;        /* diminui o tamanho */
+    height: 550px;       /* igual para virar círculo */
+    background: linear-gradient(
+        red 50%,
+        white 50%
+    );
+    border-radius: 50%;  /* torna redondo */
+    border: 6px solid black; /* borda clássica da pokebola */
+    position: relative;
+    margin: 0 auto;      /* centraliza */
+}
+
+
+/* Faixa preta ao centro */
+.pokeball-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    background: black;
+    transform: translateY(-50%);
+}
+
+/* Botão central — INÍCIO */
+.pokeball-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 160px;
+    height: 160px;
+
+    background: white;
+    border: 12px solid black;
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.pokeball-button:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+/* ===========================
+       TELA POKEMONS
+   =========================== */
+
+   
+body.pokemon-screen {
+    background: red;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout principal */
+.pokemon-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* LISTA DE CARDS */
+.lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 🔥 DUAS COLUNAS */
+    gap: 20px;
+    width: 90%;
+    justify-self: center;
+}
+
+/* PAINEL*/
+.pokemon-info {
+    width: 90%;
+    min-height: 400px;
+    background: lightblue;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 5%;
+}
+
+.pokemon-info img {
+    width:300px;
+    margin-top: 20px;
+}
+
+/* ===========================
+          CARD DOS POKÉMONS
+   =========================== */
+
+.card {
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+.button {
+    background: lightyellow;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightyellow;
+    top: 0;
+    margin-bottom: 2%;
+}
+
+.tit_pokedex{
+    color: black;
+}
+
+footer{
+    background-color: lightyellow;
+    width: 100%;
+    height: 100px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt_poke{
+    color: black;
+    margin-top: 1%;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+#voltar-btn {
+    background: lightyellow;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#voltar-btn:hover {
+    transform: scale(1.1);
+}
+
+.texto-inicial{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
